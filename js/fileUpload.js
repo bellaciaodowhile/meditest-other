@@ -51,8 +51,8 @@ document
                 .update({ data: jsonObject })
                 .eq('id', 1)
                 if (error) return alert('Ha ocurrido un error al cargar la data.')
-                alert('Datos cargados correctamente. Ahora solo debe hacer las consultas en: https://medipasscl.vercel.app/')
-                location.href = 'https://medipasscl.vercel.app/';
+                alert('Datos cargados correctamente. Ahora solo debe hacer las consultas en: https://medipass-cl.vercel.app/')
+                location.href = 'https://medipass-cl.vercel.app/';
                 preview.style.display = 'block';
                 return;
             }
@@ -61,9 +61,9 @@ document
                 .from('medidata')
                 .insert({ data: jsonObject })
                 if (error) return alert('Ha ocurrido un error al cargar la data.')
-                alert('Datos cargados correctamente. Ahora solo debe hacer las consultas en: https://medipasscl.vercel.app/')
+                alert('Datos cargados correctamente. Ahora solo debe hacer las consultas en: https://medipass-cl.vercel.app/')
                 preview.style.display = 'block';
-                location.href = 'https://medipasscl.vercel.app/';
+                location.href = 'https://medipass-cl.vercel.app/';
             } catch (error) {}
         });
       };
